@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="IntroducciónPRGATS:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/IntroducciónPRGATS_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="IntroduccionPRGATS/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
