@@ -1,20 +1,22 @@
-package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas;
+package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_II;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleados {
+public class Empleados implements Comparable {
 
 //#############################################################################
 //# Interfaces Y Clases Externas I - Píldoras Informáticas - Video 49         #
 //#############################################################################
 
+    private static int idSiguiente = 1;
     private String nombre;
     private double sueldo;
     private Date altaContrato;
     private int id;
-    private static int idSiguiente=1;
 
     public Empleados(String nom, double sue, int agno, int mes, int dia) {
         nombre = nom;
@@ -30,6 +32,10 @@ public class Empleados {
         this(nom, 30000, 2000, Calendar.JANUARY, 1);
         id = idSiguiente;
         idSiguiente++;
+    }
+
+    public static String dameIdSiguiente() {
+        return "El Id siguiente es: " + idSiguiente;
     }
 
     public String dameNombre() { // GETTER
@@ -50,10 +56,6 @@ public class Empleados {
         sueldo += aumento;
     }
 
-    public static String dameIdSiguiente() {
-        return "El Id siguiente es: " + idSiguiente;
-    }
-
     @Override
     public String toString() {
         return "Empleado{" +
@@ -62,5 +64,17 @@ public class Empleados {
                 ", sueldo=" + sueldo +
                 ", altaContrato=" + altaContrato +
                 '}';
+    }
+
+    @Override
+    public int compareTo(@NotNull Object o) {
+        Empleados otroEmpleados = (Empleados) o;
+        if (this.sueldo < otroEmpleados.sueldo) {
+            return -1;
+        }
+        if (this.sueldo > otroEmpleados.sueldo) {
+            return 1;
+        }
+        return 0;
     }
 }

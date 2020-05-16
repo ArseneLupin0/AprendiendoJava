@@ -1,5 +1,6 @@
-package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas;
+package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_II;
 
+import java.util.Arrays;
 import java.util.Calendar;
 
 public class Pruebas {
@@ -25,10 +26,26 @@ public class Pruebas {
 
         jefa_Finanzas.setIncentivo(55000);
 
+        Empleados directorComercial = new Jefatura("Sandra", 85000, 2012, Calendar.JUNE, 5);
+
+        Comparable ejemplo = new Empleados("Elisabeth", 95000, 2011, Calendar.JULY, 7);
+
+        if (directorComercial instanceof Jefatura) {
+            System.out.println("Es de tipo Jefatura");
+        }
+
+        if (ejemplo instanceof Comparable) {
+            System.out.println("Implementa la interfaz comparable");
+        }
+
+        System.out.println(jefa_Finanzas.tomarDecisiones("dar más días de vacaciones a los empleados"));
+
         for (Empleados e :
                 misEmpleados) {
             e.subeSueldo(5);
         }
+
+        Arrays.sort(misEmpleados);
 
         for (Empleados e :
                 misEmpleados) {
