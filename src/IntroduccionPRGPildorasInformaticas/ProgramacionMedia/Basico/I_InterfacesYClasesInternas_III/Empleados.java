@@ -1,4 +1,4 @@
-package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_II;
+package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_III;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Empleados implements Comparable {
+public class Empleados implements Comparable, Trabajadores {
 
 //#############################################################################
 //# Interfaces Y Clases Externas II - Píldoras Informáticas - Video 50        #
@@ -76,5 +76,10 @@ public class Empleados implements Comparable {
             return 1;
         }
         return 0;
+    }
+
+    @Override
+    public double estableceBonus(double gratificacion) {
+        return Trabajadores.bonusBase + gratificacion;
     }
 }

@@ -1,4 +1,4 @@
-package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_II;
+package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_III;
 
 public class Jefatura extends Empleados implements Jefes {
 
@@ -31,5 +31,11 @@ public class Jefatura extends Empleados implements Jefes {
     @Override
     public String tomarDecisiones(String decision) {
         return "Un miembro de la dirección ha tomado la decisión de: " + decision;
+    }
+
+    @Override
+    public double estableceBonus(double gratificacion) {
+        double prima = 2000;
+        return Trabajadores.bonusBase + gratificacion + prima;
     }
 }

@@ -1,11 +1,11 @@
-package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_II;
+package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_InterfacesYClasesInternas_III;
 
 import java.util.Arrays;
 import java.util.Calendar;
 
 public class Pruebas {
 
-//#############################################################################
+    //#############################################################################
 //# Interfaces Y Clases Externas II - Píldoras Informáticas - Video 50        #
 //#############################################################################
     public static void main(String[] args) {
@@ -39,6 +39,10 @@ public class Pruebas {
         }
 
         System.out.println(jefa_Finanzas.tomarDecisiones("dar más días de vacaciones a los empleados"));
+
+        System.out.println("El jefe " + jefa_Finanzas.dameNombre() + " tiene un bonus de: " + jefa_Finanzas.estableceBonus(500));
+
+        System.out.println(misEmpleados[3].dameNombre() + " tiene un bonus de: " + misEmpleados[3].estableceBonus(200));
 
         for (Empleados e :
                 misEmpleados) {
