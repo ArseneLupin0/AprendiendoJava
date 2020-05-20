@@ -5,9 +5,10 @@ import java.util.Calendar;
 
 public class Pruebas {
 
-    //#############################################################################
-//# Interfaces Y Clases Externas II - Píldoras Informáticas - Video 50        #
 //#############################################################################
+//# Interfaces Y Clases Externas III - Píldoras Informáticas - Video 51       #
+//#############################################################################
+
     public static void main(String[] args) {
         Jefatura jefeRRHH = new Jefatura("Juan", 55000, 2006, 9, 25);
 

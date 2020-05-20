@@ -3,7 +3,7 @@ package IntroduccionPRGPildorasInformaticas.ProgramacionMedia.Basico.I_Interface
 public class Teorico1 {
 
 //#############################################################################
-//# Interfaces Y Clases Externas II - Píldoras Informáticas - Video 50        #
+//# Interfaces Y Clases Externas III - Píldoras Informáticas - Video 51       #
 //#############################################################################
 
     /* --> ¿Propiedades?

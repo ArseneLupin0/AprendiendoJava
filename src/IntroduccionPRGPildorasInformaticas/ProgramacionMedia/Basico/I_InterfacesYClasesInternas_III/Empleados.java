@@ -9,7 +9,7 @@ import java.util.GregorianCalendar;
 public class Empleados implements Comparable, Trabajadores {
 
 //#############################################################################
-//# Interfaces Y Clases Externas II - Píldoras Informáticas - Video 50        #
+//# Interfaces Y Clases Externas III - Píldoras Informáticas - Video 51       #
 //#############################################################################
 
     private static int idSiguiente = 1;
