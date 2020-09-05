@@ -6,7 +6,7 @@ public class Teorico1 {
 //# Introducción a Procesador Textos - Píldoras Informáticas - Video 106      #
 //#############################################################################
 
-    /* -->>> Java Swing - Ultimo vídeo <<<--
+    /* -->>> Java Swing - III <<<--
      *
      *
      * --> StyleEditKit
